@@ -58,9 +58,7 @@ gulp.task('sass', function () {
  */
 gulp.task('cssmin', function() {
    return gulp.src('app/css/**/*.css') 
-        .pipe(sourcemaps.init())
         .pipe(cleancss({compatibility: 'ie8'}))
-        .pipe(sourcemaps.write('../maps'))
         .pipe(rename({
             suffix: '.min'
         }))
@@ -129,7 +127,7 @@ gulp.task('es', function(){
 /**
  * Calling all the task all together
  */
-gulp.task('do', ['sass', 'jade-watch', 'cssmin', 'jsmin', 'jsjoin'], function () {
+gulp.task('do', ['sass', 'jade-watch', 'cssmin', 'jsjoin', 'jsmin'], function () {
 
     browserSync({server: 'dist'});
 
