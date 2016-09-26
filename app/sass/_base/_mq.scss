@@ -3,13 +3,13 @@ $medium: 768px;
 $large: 1170px;
 
 @mixin MQ($canvas) {
-    @if $canvas == S {
+    @if $canvas == SMALL {
         @media only screen and (min-width: $small) { @content; }
     }
-    @else if $canvas == M {
+    @else if $canvas == MEDIUM {
         @media only screen and (min-width: $medium) { @content; }
     }
-    @else if $canvas == L {
+    @else if $canvas == LARGE {
         @media only screen and (min-width: $large) { @content; }
     }
 }
