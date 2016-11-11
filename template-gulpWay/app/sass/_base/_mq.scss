@@ -1,0 +1,20 @@
+$small: 320px;
+$medium: 768px;
+$large: 1170px;
+
+@mixin MQ($canvas) {
+    @if $canvas == SMALL {
+        @media only screen and (min-width: $small) { @content; }
+    }
+    @else if $canvas == MEDIUM {
+        @media only screen and (min-width: $medium) { @content; }
+    }
+    @else if $canvas == LARGE {
+        @media only screen and (min-width: $large) { @content; }
+    }
+}
+
+//use
+//@include MQ(S) {
+//  -----------> markup
+//}
