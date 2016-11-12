@@ -1,0 +1,46 @@
+{
+ "name": "Reactive-TODO",
+  "version": "1.0.0",
+  "description": "A simple todo application ",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:gistnoor/Reactive-TODOLIST.git",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --progress --color --hot --inline",
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js 'test/**/*.@(js|jsx)'",
+    "test:watch": "yarn run test -- --watch --watch-extensions jsx"
+  },
+  "author": "Noor <gist.asifhasannoor@gmail.com>",
+  "license": "MIT",
+  "babel": {"presets": [ "react", "es2015" ]},
+  "dependencies": {
+    "babel-core": "",
+    "babel-loader": "",
+    "babel-plugin-transform-runtime": "",
+    "babel-preset-es2015": "",
+    "babel-preset-react": "",
+    "babel-preset-stage-0": "",
+    "babel-runtime": "",
+    "chai": "",
+    "chai-immutable": "",
+    "css-loader": "",
+    "html-webpack-plugin": "",
+    "immutable": "",
+    "jsdom": "",
+    "map": "",
+    "mocha": "",
+    "react": "",
+    "react-addons-pure-render-mixin": "",
+    "react-addons-test-utils": "",
+    "react-dom": "",
+    "react-hot-loader": "",
+    "resolve-url": "",
+    "style-loader": "",
+    "webpack": "",
+    "webpack-dev-middleware": "",
+    "webpack-dev-server": "",
+    "webpack-hot-middleware": ""
+  }
+}
